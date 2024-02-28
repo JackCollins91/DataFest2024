@@ -28,6 +28,7 @@ library(dplyr)
 
 # To access the ASA dataset, use this link: 
 # https://bwsyncandshare.kit.edu/s/ErACwGqLAJ9iyxS
+# Unzip the data into the same directory as this R script.
 # Read the documentation carefully to understand the contents of the dataset.
 
 #################################
