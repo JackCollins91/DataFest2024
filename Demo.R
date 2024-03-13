@@ -37,14 +37,16 @@ library(dplyr)
 #                               #
 #################################
 
-data_directory <- '2024-ASADataFest-Data-and-Documentation/2024-ASADataFest-Data-and-Documentation/'
-checkpoints <- read.csv(paste0(data_directory, 'Data Files/checkpoints.csv'))
-items <- read.csv(paste0(data_directory, 'Data Files/items.csv'))
-media_views <- read.csv(paste0(data_directory, 'Data Files/media_views.csv'))
-page_views <- read.csv(paste0(data_directory, 'Data Files/page_views.csv'))
-responses <- read.csv(paste0(data_directory, 'Data Files/responses.csv'))
+data_directory <- '2024 ASA DataFest Data and Documentation-updated-2024-03-04/2024 ASA DataFest Data and Documentation-updated-2024-03-04/'
+checkpoints_eoc <- read.csv(paste0(data_directory, 'full_03_04/checkpoints_eoc.csv'))
+checkpoints_pulse <- read.csv(paste0(data_directory, 'full_03_04/checkpoints_pulse.csv'))
+items <- read.csv(paste0(data_directory, 'full_03_04/items.csv'))
+media_views <- read.csv(paste0(data_directory, 'full_03_04/media_views.csv'))
+page_views <- read.csv(paste0(data_directory, 'full_03_04/page_views.csv'))
+responses <- read.csv(paste0(data_directory, 'full_03_04/responses.csv'))
 
-summary(checkpoints)
+summary(checkpoints_eoc)
+summary(checkpoints_pulse)
 summary(items)
 summary(media_views)
 summary(page_views)
