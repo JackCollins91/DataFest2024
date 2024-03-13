@@ -43,8 +43,12 @@ items <- read.csv(paste0(data_directory, 'Data Files/items.csv'))
 media_views <- read.csv(paste0(data_directory, 'Data Files/media_views.csv'))
 page_views <- read.csv(paste0(data_directory, 'Data Files/page_views.csv'))
 responses <- read.csv(paste0(data_directory, 'Data Files/responses.csv'))
-#   Note: `responses.csv` might be in the `Random Sample of Data files` folder,
-#   so you might need to move it. 
+
+summary(checkpoints)
+summary(items)
+summary(media_views)
+summary(page_views)
+summary(responses)
 
 #################################
 #                               #
@@ -74,7 +78,7 @@ results <- merge(
   average_scores, 
   average_try_again_clicks,
   by = c("student_id", "chapter"),
-  all.x = TRUE
+  all.x = TRUE #left join
 )
 
 # Visualize the results by scatter-plotting the average scores with the average 
