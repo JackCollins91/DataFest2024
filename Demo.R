@@ -38,7 +38,7 @@ library(dplyr)
 #                               #
 #################################
 
-data_directory <- '2024 ASA DataFest Data and Documentation-updated-2024-03-04/2024 ASA DataFest Data and Documentation-updated-2024-03-04/'
+data_directory <- '2024 ASA DataFest Data and Documentation-updated-2024-03-04/'
 checkpoints_eoc <- read.csv(paste0(data_directory, 'full_03_04/checkpoints_eoc.csv'))
 checkpoints_pulse <- read.csv(paste0(data_directory, 'full_03_04/checkpoints_pulse.csv'))
 items <- read.csv(paste0(data_directory, 'full_03_04/items.csv'))
